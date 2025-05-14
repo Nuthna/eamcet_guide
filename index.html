@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAMCET Pathway Navigator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EAMCET</h1>
+            <p class="subtitle">Pathway Navigator</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li>
+                <a href="#">Admission Process</a>
+                <div class="dropdown-menu">
+                    <a href="document_preparation.html">Document Preparation</a>
+                    <a href="registration.html">Registration & Payment</a>
+                    <a href="certificate_verification.html">Certificate Verification</a>
+                    <a href="web_options.html">Web Options & Seat Allotment</a>
+                </div>
+            </li>
+            <li><a href="college_finder.html">College Finder</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+        <div class="tag-line">
+            <span>Navigating EAMCET Admissions Made Simple</span>
+        </div>
+        <div class="hero-content">
+            <h1>Your Complete Guide to <span class="highlight">EAMCET</span><br>Engineering College Admissions</h1>
+            <p>Don't get lost in the admission process. We guide you through<br>every step from document verification to college selection.</p>
+            <div class="cta-buttons">
+                <button class="primary-btn">Start Your Journey →</button>
+                <button class="secondary-btn">Find Colleges By Rank</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="timeline-section" id="timeline" style="display: none;">
+        <div class="timeline-container">
+            <button class="back-button" onclick="goBack()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M12 19L5 12L12 5" stroke="#1a237e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back to Home
+            </button>
+            <h2 class="timeline-title">Counseling Process Timeline</h2>
+            <p class="timeline-subtitle">Follow these key steps to successfully complete your engineering admission process</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDA2NkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTE0IDJINiBhMiAyIDAgMCAwLTIgMnYxNmEyIDIgMCAwIDAgMiAyaDEyYTIgMiAwIDAgMCAyLTJWOHoiPjwvcGF0aD48cG9seWxpbmUgcG9pbnRzPSIxNCAyIDE0IDggMjAgOCI+PC9wb2x5bGluZT48L3N2Zz4=" alt="Document" class="icon-img">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-date">Immediately after results</div>
+                            <h3>Document Preparation</h3>
+                            <p>Gather all required certificates and documents for counseling.</p>
+                            <a href="#" class="learn-more">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDA2NkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTMgOWwzIDNoMTJsMyAtM1Y2YTIgMiAwIDAgMC0yLTJINWEyIDIgMCAwIDAtMiAydjN6Ij48L3BhdGg+PHBhdGggZD0iTTMgOXY2YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMlY5Ij48L3BhdGg+PC9zdmc+" alt="Registration" class="icon-img">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-date">Phase 1: July 2025</div>
+                            <h3>Registration & Fee Payment</h3>
+                            <p>Register online for counseling and pay the processing fee.</p>
+                            <a href="registration.html" class="learn-more">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDA2NkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTkgNUg3YTIgMiAwIDAgMC0yIDJ2MTJIM2wyIDJoNmwyLTJINXYtM2gxNHYzaC04bDIgMmg2bDItMmgtMlY3YTIgMiAwIDAgMC0yLTJoLTJ6Ij48L3BhdGg+PHJlY3QgeD0iNyIgeT0iNSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjQiPjwvcmVjdD48L3N2Zz4=" alt="Verification" class="icon-img">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-date">As per schedule</div>
+                            <h3>Certificate Verification</h3>
+                            <p>Visit helpline center for document verification and biometric registration.</p>
+                            <a href="certificate_verification.html" class="learn-more">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDA2NkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDJ2NiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMiAxNnY2Ij48L3BhdGg+PHBhdGggZD0iTTIgMTJoNiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNiAxMmg2Ij48L3BhdGg+PC9zdmc+" alt="Web Options" class="icon-img">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-date">After verification</div>
+                            <h3>Web Options & Seat Allotment</h3>
+                            <p>Fill choices of colleges/branches and get seat allotment.</p>
+                            <a href="web_options.html" class="learn-more">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 

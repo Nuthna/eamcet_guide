@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Fee Payment - EAMCET Pathway Navigator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>EAMCET</h1>
+            <p class="subtitle">Pathway Navigator</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Admission Process</a>
+                <div class="dropdown-menu">
+                    <a href="document_preparation.html">Document Preparation</a>
+                    <a href="registration.html" class="active">Registration & Payment</a>
+                    <a href="certificate_verification.html">Certificate Verification</a>
+                    <a href="web_options.html">Web Options & Seat Allotment</a>
+                </div>
+            </li>
+            <li><a href="college_finder.html">College Finder</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="registration-content">
+        <button class="back-button" onclick="window.location.href='index.html#timeline'">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5M12 19L5 12L12 5" stroke="#1a237e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </button>
+
+        <div class="registration-container">
+            <h1>Registration & Fee Payment Process</h1>
+            <p class="subtitle">Complete guide for EAMCET counseling registration</p>
+
+            <div class="video-section">
+                <h2>Step-by-Step Video Guide</h2>
+                <div class="video-wrapper">
+                    <iframe id="youtube-iframe" width="100%" height="500" src="https://www.youtube.com/embed/yC8juuzVBis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="registration-steps">
+                <h2>Registration Process Overview</h2>
+                <div class="step">
+                    <h3>1. Visit Official Website</h3>
+                    <p>Go to the official EAMCET counseling website and click on the registration link.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Fill Personal Details</h3>
+                    <p>Enter your personal information, EAMCET hall ticket number, and other required details.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Upload Documents</h3>
+                    <p>Upload scanned copies of required documents in the specified format.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Fee Payment</h3>
+                    <p>Pay the counseling processing fee through online payment methods.</p>
+                </div>
+                <div class="step">
+                    <h3>5. Print Registration Form</h3>
+                    <p>Download and print the registration form for future reference.</p>
+                </div>
+            </div>
+
+            <div class="important-notes">
+                <h2>Important Notes</h2>
+                <ul>
+                    <li>Keep all original documents ready for verification</li>
+                    <li>Save your registration number for future reference</li>
+                    <li>Complete the process before the deadline</li>
+                    <li>Keep proof of payment safe</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Set flag when registration page loads
+        window.addEventListener('load', () => {
+            sessionStorage.setItem('returningFromRegistration', 'true');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
