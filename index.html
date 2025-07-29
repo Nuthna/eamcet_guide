@@ -122,7 +122,31 @@
                 </div>
             </div>
         </div>
+        
     </section>
+    <!-- Chatbot Popup -->
+<div id="chatbot-container" 
+     style="position:fixed;bottom:80px;right:20px;width:350px;height:500px;display:none;
+            border:1px solid #ccc;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.2);z-index:999;">
+   <iframe src="https://eamcet-chatbot-1.onrender.com" 
+           style="width:100%;height:100%;border:none;border-radius:10px;"></iframe>
+</div>
+
+<!-- Chatbot Button -->
+<button id="chatbot-button" 
+        style="position:fixed;bottom:20px;right:20px;padding:15px;border:none;border-radius:50%;
+               background:#007bff;color:white;font-size:20px;cursor:pointer;z-index:1000;">
+   💬
+</button>
+
+<script>
+   // Toggle chatbot popup
+   document.getElementById('chatbot-button').addEventListener('click', function() {
+       let container = document.getElementById('chatbot-container');
+       container.style.display = container.style.display === 'none' ? 'block' : 'none';
+   });
+</script>
+
 
     <script src="script.js"></script>
 </body>
